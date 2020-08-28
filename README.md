@@ -1,2 +1,2 @@
 # javascriptSandbox
-A place to store JavaScript examples, notes, and references.
+A place to practice JavaScript and store examples, notes, and references.
