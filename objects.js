@@ -42,3 +42,17 @@ console.log(kobeTheDog.introduce())
 console.log(kobeTheDog.bark())
 console.log(twitchTheBird.introduce())
 console.log(twitchTheBird.tweet())
+
+
+// Objects 1, 2, 3 all point to the same reference. 
+// Object4 is a new object in memory and therefore does not change the previous objects.
+// Editing object2 later changes the value of the reference for the other objects pointing to it.
+object1 = { a: 5 }; // 5
+object2 = object1; // 5
+object3 = object2; // 5
+object4 = { a: 6 }; // 6
+console.log(object2.a)
+console.log(object4.a)
+object2.a = 4;
+console.log(object1.a) // 4
+console.log(object3.a) // 4
